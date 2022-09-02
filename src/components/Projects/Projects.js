@@ -14,7 +14,7 @@ const Projects = () => {
         {projects.map((project) => (
           <ProjectContainer key={uniqid()} project={project} />
         ))}
-      </div>
+      </div> 
     </section>
   )
 }

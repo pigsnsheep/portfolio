@@ -24,9 +24,8 @@ const App = () => {
         <Skills />
         <Contact />
       </main>
-
-      <ScrollToTop />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
