@@ -99,6 +99,10 @@ main {
   z-index: 1;
 }
 
+.margin {
+  margin-top:20px;
+}
+
 .btn--outline:hover,
 .btn--outline:focus {
   color: var(--clr-bg);

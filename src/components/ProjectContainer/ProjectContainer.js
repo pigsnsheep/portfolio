@@ -37,10 +37,10 @@ const ProjectContainer = ({ project }) => (
         <LaunchIcon />
       </a>
     )}
-    <a href={project.abstract}>
-    <span type='button' className='btn btn--outline'>
-          Abstract
-    </span>
+    <a style={{'margin-top': '2em'}} href={project.abstract}>
+      <span type='button' className='btn btn--outline margin'>
+        Abstract
+      </span>
     </a>
   </div>
 )
