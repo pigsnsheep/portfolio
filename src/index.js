@@ -7,5 +7,5 @@ render(
   <ThemeProvider>
     <App />
   </ThemeProvider>,
-  document.getElementById('test')
+  document.getElementById('root')
 )
