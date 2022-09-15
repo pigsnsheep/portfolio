@@ -68,17 +68,6 @@ const courses = [
   "AP Computer Science A (5)"
 ]
 
-const extracurriculars = [
-  {
-    name: 'Choir - Cantabile Youth Singers',
-    description: 'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.'
-  },
-  {
-    name: 'Robotics - FRC Team 6962',
-    description: 'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.'
-
-  }
-]
 
 
 
