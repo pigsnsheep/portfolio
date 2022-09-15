@@ -39,7 +39,7 @@ const ProjectContainer = ({ project }) => (
     )}
     <a style={{'margin-top': '2em'}} href={project.abstract}>
       <span type='button' className='btn btn--outline margin'>
-        Abstract
+        report
       </span>
     </a>
   </div>

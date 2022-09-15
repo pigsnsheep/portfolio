@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import ReactMarkdown from "react-markdown";
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -10,7 +11,6 @@ import Footer from './components/Footer/Footer'
 import Courses from './components/Courses/Courses'
 import './AppIndex.css'
 
-import ReactMarkdown from "react-markdown";
 
 export default function App() {
   const markdown = `
