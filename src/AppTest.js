@@ -12,7 +12,7 @@ import Courses from './components/Courses/Courses'
 import './AppIndex.css'
 
 
-export default function App() {
+const App = () => {  
   const markdown = `
   # Header 1
   ## Header 2
@@ -31,4 +31,4 @@ export default function App() {
   );
 }
 
-
+export default App
