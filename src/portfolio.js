@@ -27,7 +27,7 @@ const projects = [
     stack: ['R', 'Complex Heatmap', 'Biology'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
-    abstract: 'https://docs.google.com'
+    abstract: 'https://docs.google.com/document/d/1-HXHYUxMWn8siQlrPr8PdFApIwXqdsoGM9BTtNwiajs/edit?usp=sharing'
   },
   {
     name: 'Spotify Recommender Project',
