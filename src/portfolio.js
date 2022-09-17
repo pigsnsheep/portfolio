@@ -25,7 +25,7 @@ const projects = [
     description:
       'Used correlation between gene expression and drug sensitivity in immuno-resistant cell lines to efficiently determine forms of treatment',
     stack: ['R', 'Complex Heatmap', 'Biology'],
-    sourceCode: 'https://github.com',
+    sourceCode: 'https://github.com/pigsnsheep/GeneExpressionProject',
     livePreview: 'https://github.com',
     abstract: 'https://docs.google.com/document/d/1-HXHYUxMWn8siQlrPr8PdFApIwXqdsoGM9BTtNwiajs/edit?usp=sharing'
   },
