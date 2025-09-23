@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
