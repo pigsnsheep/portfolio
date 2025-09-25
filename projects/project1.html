@@ -8,17 +8,50 @@
 <body>
   <div class="container">
     <h1>AI Document Analyzer</h1>
-    <p>Full-stack semantic search for PDFs using FastAPI, FAISS, and Hugging Face embeddings.</p>
-    <h3>Tech Stack</h3>
+    <p>
+      Full-stack semantic search and retrieval-augmented generation pipeline for PDFs. 
+      Designed to let users upload research papers and ask natural language questions, 
+      receiving accurate answers with citations.
+    </p>
+
+    <h3>Problem</h3>
+    <p>
+      Traditional keyword search often fails when phrasing differs or context spans multiple 
+      sections. The goal was to build an AI-powered analyzer that enables natural queries 
+      over large academic PDFs.
+    </p>
+
+    <h3>Approach</h3>
     <ul>
-      <li>FastAPI backend</li>
-      <li>FAISS vector search</li>
-      <li>Hugging Face sentence embeddings</li>
-      <li>React frontend</li>
+      <li><strong>Parsing & Chunking:</strong> Used PyMuPDF to split PDFs into ~500-token chunks with metadata (doc_id, page_num).</li>
+      <li><strong>Embeddings:</strong> Generated sentence embeddings with Hugging Face <code>all-MiniLM-L6-v2</code>.</li>
+      <li><strong>Vector Search:</strong> Stored embeddings in FAISS, with metadata persisted in SQLite.</li>
+      <li><strong>Reranking:</strong> Applied a cross-encoder (<code>ms-marco-MiniLM-L-6-v2</code>) to improve precision.</li>
+      <li><strong>RAG:</strong> Passed top chunks to an LLM (OpenAI/HF) for grounded answers with citations.</li>
+      <li><strong>Stack:</strong> FastAPI backend, React + Tailwind frontend.</li>
     </ul>
+
     <h3>Results</h3>
-    <p>Enabled ~95% top-3 retrieval accuracy across 100+ academic PDFs.</p>
-    <a href="../index.html">← Back</a>
+    <ul>
+      <li>~92% top-3 retrieval accuracy across 100+ academic PDFs.</li>
+      <li>Average query latency &lt; 1.2s (ANN + reranking).</li>
+      <li>Tested by ~20 peers; strong feedback on clarity of citations.</li>
+    </ul>
+
+    <h3>Reflection</h3>
+    <p>
+      This project strengthened my skills in vector search systems, RAG pipelines, and 
+      full-stack AI integration. It also highlighted the importance of safeguards to 
+      reduce hallucinations and improve reliability.
+    </p>
+
+    <h3>Links</h3>
+    <p>
+      🔗 <a href="https://github.com/yourusername/doc-analyzer" target="_blank">GitHub Repository</a><br>
+      📹 <a href="#" target="_blank">Demo Video (optional)</a>
+    </p>
+
+    <p><a href="../index.html">← Back to Portfolio</a></p>
   </div>
 </body>
 </html>
