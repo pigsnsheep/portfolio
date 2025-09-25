@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitmigo – AI Personal Trainer</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fitmigo – AI Personal Trainer</h1>
+    <p>
+      AI-powered fitness assistant that uses computer vision and deep learning 
+      to detect exercise repetitions, track form, and give real-time feedback.
+    </p>
+
+    <h3>Problem</h3>
+    <p>
+      Many people lack access to personal trainers, making it difficult to 
+      maintain proper form or measure progress. Existing fitness apps often 
+      only count reps without evaluating quality. The goal of Fitmigo was to 
+      create an accessible, computer-vision-based trainer that delivers both 
+      accuracy and feedback.
+    </p>
+
+    <h3>Approach</h3>
+    <ul>
+      <li><strong>Pose Detection:</strong> Used <code>MediaPipe</code> for skeletal keypoint tracking across multiple joints.</li>
+      <li><strong>Feature Engineering:</strong> Extracted joint angles and time-series motion vectors from pose data.</li>
+      <li><strong>Neural Network Model:</strong> Trained a PyTorch classifier to detect exercise type and rep count (~95% accuracy across push-ups, squats, curls).</li>
+      <li><strong>Form Evaluation:</strong> Applied rule-based thresholds on joint angles (e.g., squat depth, elbow extension) to grade form quality.</li>
+      <li><strong>User Testing:</strong> ~150 live tests across different body types and lighting conditions.</li>
+    </ul>
+
+    <h3>Results</h3>
+    <ul>
+      <li><strong>Accuracy:</strong> ~95% detection accuracy for rep counting across multiple exercises.</li>
+      <li><strong>Robustness:</strong> Worked under varying environments (indoor/outdoor, low-light).</li>
+      <li><strong>User Adoption:</strong> Tested by 30+ peers, who highlighted real-time form feedback as most valuable feature.</li>
+    </ul>
+
+    <h3>Reflection</h3>
+    <p>
+      This project sharpened my skills in computer vision, time-series 
+      classification, and user-centered design. It also taught me the 
+      importance of combining <em>machine learning models</em> with 
+      <em>domain knowledge</em> (biomechanics) for practical applications.
+    </p>
+
+    <h3>Links</h3>
+    <p>
+      🔗 <a href="https://github.com/yourusername/fitmigo" target="_blank">GitHub Repository</a><br>
+      📹 <a href="#" target="_blank">Demo Video (optional)</a>
+    </p>
+
+    <p><a href="../index.html">← Back to Portfolio</a></p>
+  </div>
+</body>
+</html>
