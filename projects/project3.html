@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gene Expression & Cancer Drug Response</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gene Expression & Cancer Drug Response</h1>
+    <p>
+      Research project analyzing gene expression data to predict cancer drug response. 
+      Published in a peer-reviewed journal, this work combined dimensionality reduction, 
+      clustering, and predictive modeling to identify biomarkers of treatment sensitivity.
+    </p>
+
+    <h3>Problem</h3>
+    <p>
+      Precision medicine depends on identifying which patients will respond to specific 
+      cancer drugs. Gene expression datasets are high-dimensional (20k+ genes) and noisy, 
+      making prediction challenging. The project tested the effectiveness of spectral clustering, 
+      a well-known dimensionality reduction technique relatively unexplored in the field of gene 
+      expression, against traditional models such as PCA, UMAP, and t-SNE.
+    </p>
+
+    <h3>Approach</h3>
+    <ul>
+      <li><strong>Data:</strong> Downloaded and downsampled gene expression data form the Geneotype-Tissue Expression Project V9 Dataset.</li>
+      <li><strong>Parameter Optimization:</strong> .</li>
+      <li><strong>Benchmarking:</strong> Created PCA, UMAP, K-means, t-SNE models for comparison.</li>
+      <li><strong>Evaluation:</strong> Used a aggregation of Silhouette, Calinski-Harabasz, and Davies-Bouldin scores to evaluate each model's effectivness at clustering the data.</li>
+    </ul>
+
+    <h3>Results</h3>
+    <ul>
+      <li>Discovered that spectral clustering performed significantly better than PCA and K-means while achieving similar scores to UMAP and t-SNE, while being twice as efficient.</li>
+      <li>.</li>
+      <li></li>
+    </ul>
+
+    <h3>Reflection</h3>
+    <p>
+      This project gave me hands-on experience bridging <em>biology</em> and 
+      <em>programming</em>. It strengthened my skills in dimensionality reduction, 
+      graph-based clustering, and model evaluation.
+    </p>
+
+    <h3>Links</h3>
+    <p>
+      📄 <a href="https://doi.org/xxxx" target="_blank">Published Paper</a><br>
+      🔗 <a href="https://github.com/yourusername/gene-expression" target="_blank">GitHub Repository</a>
+    </p>
+
+    <p><a href="../index.html">← Back to Portfolio</a></p>
+  </div>
+</body>
+</html>
