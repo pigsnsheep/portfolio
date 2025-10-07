@@ -1,63 +1,83 @@
-<section id="projects" class="container py-5">
-  <h2>Featured Projects</h2>
-  <div class="row">
-    <!-- Row 1 -->
-    <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="assets/img/doc-analyzer.png" class="card-img-top" alt="AI Document Analyzer">
-        <div class="card-body">
-          <h5 class="card-title">AI Document Analyzer</h5>
-          <p class="card-text">
-            Full-stack semantic search & retrieval-augmented generation system built with 
-            FastAPI, FAISS, and Hugging Face embeddings.
-          </p>
-          <a href="projects/project1.html" class="btn btn-sm btn-outline-primary">Details</a>
-          <a href="https://github.com/pigsnsheep/doc-analyzer" class="btn btn-sm btn-outline-dark">Code</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Warrier – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap for quick styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jay Warrier</a>
+      <div>
+        <a class="nav-link d-inline" href="#projects">Projects</a>
+        <a class="nav-link d-inline" href="#research">Research</a>
+        <a class="nav-link d-inline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center p-5 bg-light">
+    <h1>Jay Warrier</h1>
+    <p class="lead">Math + CS @ Duke | AI/ML & Software Engineering</p>
+    <a href="assets/Jay_Warrier_Resume copy.pdf" class="btn btn-primary">Download Resume</a>
+  </header>
+
+  <section id="projects" class="container py-5">
+    <h2>Featured Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="assets/img/doc-analyzer.png" class="card-img-top" alt="AI Document Analyzer">
+          <div class="card-body">
+            <h5 class="card-title">AI Document Analyzer</h5>
+            <p class="card-text">Built full-stack semantic search & RAG pipeline with FastAPI, FAISS, Hugging Face embeddings.</p>
+            <a href="projects/project1.html" class="btn btn-sm btn-outline-primary">Details</a>
+            <a href="https://github.com/pigsnsheep/doc-analyzer" class="btn btn-sm btn-outline-dark">Code</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="assets/img/fitmigo.png" class="card-img-top" alt="FitMigo">
+          <div class="card-body">
+            <h5 class="card-title">FitMigo</h5>
+            <p class="card-text">AI Personal Trainer using MediaPipe and PyTorch.</p>
+            <a href="projects/project2.html" class="btn btn-sm btn-outline-primary">Details</a>
+            <a href="https://github.com/pigsnsheep/fitmigo" class="btn btn-sm btn-outline-dark">Code</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="assets/img/gene-expression.png" class="card-img-top" alt="Gene Expression Project">
+          <div class="card-body">
+            <h5 class="card-title">Gene Expression Project</h5>
+            <p class="card-text">Exploring the effectiveness of Spectral Clustering on gene expression data.</p>
+            <a href="projects/project3.html" class="btn btn-sm btn-outline-primary">Details</a>
+            <a href="https://github.com/pigsnsheep/gene-expression" class="btn btn-sm btn-outline-dark">Code</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="assets/img/fitmigo.png" class="card-img-top" alt="FitMigo">
-        <div class="card-body">
-          <h5 class="card-title">FitMigo – AI Personal Trainer</h5>
-          <p class="card-text">
-            AI-powered fitness assistant using MediaPipe pose detection and PyTorch models 
-            to track reps and evaluate form in real time.
-          </p>
-          <a href="projects/project2.html" class="btn btn-sm btn-outline-primary">Details</a>
-          <a href="https://github.com/pigsnsheep/fitmigo" class="btn btn-sm btn-outline-dark">Code</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Row 2 -->
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card mb-4 shadow-sm">
-        <img src="assets/img/gene-expression.png" class="card-img-top" alt="Gene Expression Project">
-        <div class="card-body">
-          <h5 class="card-title">Gene Expression Analysis</h5>
-          <p class="card-text">
-            Applied spectral clustering and dimensionality reduction to predict 
-            cancer drug response from high-dimensional gene expression data.
-          </p>
-          <a href="projects/project3.html" class="btn btn-sm btn-outline-primary">Details</a>
-          <a href="https://github.com/pigsnsheep/gene-expression" class="btn btn-sm btn-outline-dark">Code</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
+    <!-- Project 4 -->
+    <div class="col-md-4">
       <div class="card mb-4 shadow-sm">
         <img src="assets/img/grill-lab.png" class="card-img-top" alt="Vagus Nerve Imaging – Grill Lab">
         <div class="card-body">
           <h5 class="card-title">Vagus Nerve Imaging – Grill Lab</h5>
           <p class="card-text">
-            Automated 3D nerve segmentation and graph-based fiber tracking to accelerate 
-            analysis of vagus nerve histology data for targeted stimulation therapies.
+            Automated 3D nerve segmentation and graph-based fiber tracking to accelerate analysis of 
+            vagus nerve histology data for targeted electrical therapies.
           </p>
           <a href="projects/project4.html" class="btn btn-sm btn-outline-primary">Details</a>
           <a href="https://github.com/pigsnsheep/grill-lab-nerve-analysis" class="btn btn-sm btn-outline-dark">Code</a>
@@ -65,4 +85,15 @@
       </div>
     </div>
   </div>
-</section>
+  </section>
+  
+
+  <footer id="contact" class="bg-dark text-light text-center p-4">
+    <p>Contact: <a href="mailto:jay.warrier@duke.edu" class="text-light">jay.warrier@duke.edu</a></p>
+    <p>
+      <a href="https://github.com/pigsnsheep" class="text-light">GitHub</a> |
+      <a href="https://www.linkedin.com/in/jay-warrier-6315961b1/" class="text-light">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
