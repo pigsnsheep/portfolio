@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vagus Nerve Imaging – Grill Lab Research</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vagus Nerve Imaging – Grill Lab, Duke University</h1>
+    <p>
+      Developed computer vision and graph-based analysis tools for 3D histology imaging 
+      of the vagus nerve, a key target for electrical stimulation therapies. 
+      The goal was to automate segmentation, fiber tracking, and error detection, 
+      enabling researchers to better understand how stimulation parameters affect nerve function.
+    </p>
+
+    <h3>Problem</h3>
+    <p>
+      Manual tracing of nerve fibers from histological images is slow and error-prone, 
+      often taking hours per patient. Additionally, segmentation algorithms can misclassify 
+      nerve regions, requiring labor-intensive corrections. 
+      The goal was to build automated, data-driven pipelines to accelerate analysis 
+      and improve reproducibility.
+    </p>
+
+    <h3>Approach</h3>
+    <ul>
+      <li><strong>Segmentation Analysis:</strong> Applied OpenCV’s <code>connectedComponents</code> algorithm 
+        to identify distinct nerve profiles in each image slice and separate the main trunk 
+        from branching structures.</li>
+      <li><strong>Graph Construction:</strong> Connected fibers between frames using area overlap metrics 
+        and converted results into interpretable network structures using <code>igraph</code>.</li>
+      <li><strong>Classification of Errors:</strong> Computed color statistics for each region 
+        and trained a <code>LogisticRegression</code> model (scikit-learn) to detect segmentation mistakes.</li>
+      <li><strong>Optimization:</strong> Profiled the pipeline with <code>cProfile</code> and <code>snakeviz</code>, 
+        achieving a 20× runtime improvement through memory management and algorithmic pruning.</li>
+      <li><strong>Data Backtracking:</strong> Given fiber composition data at a specific frame, 
+        implemented an algorithm to backtrack and infer composition for prior frames — 
+        enabling more targeted stimulation planning.</li>
+    </ul>
+
+    <h3>Results</h3>
+    <ul>
+      <li>Automated fiber detection reduced manual analysis time by ~8 hours per patient.</li>
+      <li>Achieved 20× performance speedup after profiling and optimization.</li>
+      <li>Provided a framework for visualizing nerve connectivity and predicting stimulation outcomes.</li>
+    </ul>
+
+    <h3>Reflection</h3>
+    <p>
+      This research deepened my experience in computer vision, biomedical data analysis, and 
+      graph-based modeling. I gained firsthand exposure to applying software engineering and 
+      machine learning principles to medical imaging — bridging algorithmic rigor with clinical relevance.
+    </p>
+
+    <h3>Links</h3>
+    <p>
+      🔗 <a href="https://github.com/pigsnsheep/grill-lab-nerve-analysis" target="_blank">GitHub Repository (Private/Internal)</a><br>
+      🧠 <a href="https://neurology.duke.edu/research/grill-lab" target="_blank">Grill Lab Website</a>
+    </p>
+
+    <p><a href="../index.html">← Back to Portfolio</a></p>
+  </div>
+</body>
+</html>
