@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Recommender System</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Spotify Recommender System</h1>
+    <p>
+      Designed and implemented a personalized music recommendation engine using Spotify's Web API, 
+     and audio feature embeddings. 
+    </p>
+
+    <h3>Problem</h3>
+    <p>
+      While Spotify's native recommendations are strong, they rely heavily on global user trends ("hits"). 
+      The goal of this project was to build a recommender that could not only suggest hits, but songs that users have previously never heard before and might enjoy.
+      recommend 
+    </p>
+
+    <h3>Approach</h3>
+    <ul>
+      <li><strong>Data Collection:</strong> Starting with a list of popular songs, generated training data by prompting the user on whether or not they liked the song.</li>
+      <li><strong>Feature Extraction:</strong> Extracted audio features (e.g., danceability, energy, valence, tempo) and embedded them into a multidimensional feature space.</li>
+      <li><strong>Filtering:</strong> Determined which features the user valued, and used those features to train a classifier model.</li>
+      <li><strong>Interface:</strong> Developed a simple frontend where users canreceive tailored recommendations.</li>
+    </ul>
+
+    <h3>Results</h3>
+    <ul>
+      <li>Generated recommendations closely aligned with user taste, validated through user testing.</li>
+      <li>Created interpretable visualizations showing the range of audio features the user likes.</li>
+    </ul>
+
+    <h3>Reflection</h3>
+    <p>
+      This project deepened my understanding of ML system design and filtering techniques. 
+      It reinforced how machine learning can be combined with human-centered design to deliver both accurate 
+      and explainable recommendations in real-world applications.
+    </p>
+
+
+    <p><a href="../index.html">← Back to Portfolio</a></p>
+  </div>
+</body>
+</html>
